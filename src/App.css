@@ -51,3 +51,32 @@
   border: 1px solid #caf77649;
   transform: translateY(-3px);
 }
+
+.main {
+  background-color: rgba(238, 238, 238, 0.384);
+  padding: 2rem;
+}
+.main__row--text{
+  margin-bottom: 1rem;
+}
+.main__row--radius{
+  padding:5px;
+  width: 9rem;
+  border-radius: 4px;
+  border: 1px solid  rgba(77, 97, 209, 0.692);
+  margin-right: 2rem;
+}
+.main__row--radius:focus {outline: 0;}
+.main__row--text{
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.main__btn--search{
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 1rem;
+  background-color: rgba(77, 97, 209, 0.692);
+  border: 1px solid #caf77649;
+  border-radius: 5px;
+  color: #fff;
+}
