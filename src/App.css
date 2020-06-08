@@ -14,10 +14,11 @@
 .header__text{
   position: absolute;
   text-align: center;
+  width: 80%;
   top: 50%;
   left: 50%;
-  width: 1140px;
-  transform: translate(-50%,-50%)
+  transform: translate(-50%,-50%);
+  padding: 1rem;
 }
 .header__primary{
   font-size: 4rem;
@@ -29,6 +30,8 @@
 }
 .header__secondary{
   font-size: 1.8rem;
+  display: block;
+  margin-bottom: 1.5rem;
   color: #ccc;
   font-weight: 100;
 }
@@ -53,11 +56,11 @@
 }
 
 .main {
-  background-color: rgba(238, 238, 238, 0.384);
+  background-color: rgba(238, 238, 238, 0.2);
   padding: 2rem;
 }
 .main__row--text{
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .main__row--radius{
   padding:5px;
@@ -75,8 +78,46 @@
   display: inline-block;
   padding: 4px 10px;
   font-size: 1rem;
-  background-color: rgba(77, 97, 209, 0.692);
+  background-color: rgba(77, 97, 209, 0.747);
   border: 1px solid #caf77649;
   border-radius: 5px;
   color: #fff;
+  cursor: pointer;
+}
+.main__btn--search:focus{
+  outline: 0;
+}
+.margin--b {
+  margin-bottom: 2.5rem;
+}
+
+.display {
+  border-radius: 4px;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  box-shadow: .8rem 0 .5rem #ccc
+}
+.display:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.main__results{
+  font-size: 1rem;
+  font-weight: 300;
+  display: block;
+}
+
+.main__results:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width:767px) {
+  .header__primary{
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+  }
+  .header__secondary{
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
 }
